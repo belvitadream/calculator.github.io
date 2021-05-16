@@ -25,6 +25,7 @@ function handleAction (e) {
     data.action = e.target.dataset.action
     data.newValue = undefined;
     console.log(data);
+    
 }
 
 function handleNumber (e) {
