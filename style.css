@@ -1,0 +1,68 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(55, 198, 255),
+    rgb(33, 245, 121)
+  );
+  background-size: contain;
+  height: 100vh;
+}
+
+button {
+  transition: all 0.2s;
+}
+
+button:hover {
+  background-color: rgb(29, 29, 29);
+  color: white;
+  cursor: pointer;
+}
+
+.calculator-wrapper {
+  width: 400px;
+  margin: 100px auto;
+  display: grid;
+  /* grid-auto-flow: column; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 100px);
+  /* grid-template-rows: repeat(6, 1fr); */
+  /* border: 2px solid black; */
+  grid-gap: 2px;
+  background-color: rgb(239, 250, 252);
+}
+
+.grid-item {
+  font-size: 40px;
+  background-color: rgb(210, 241, 247);
+
+  /* border: 2px solid white; */
+  border: none;
+  outline: none;
+  border-radius: 0px;
+  /* width: 100px; */
+  /* height: 100px; */
+}
+
+.ac {
+  grid-column: span 2;
+}
+
+.input {
+  grid-column: 1/-1;
+  /* height: 100%; */
+  margin: 0px;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  display: grid;
+}
+
+.input > span {
+  justify-self: end;
+  align-self: end;
+  margin-right: 10px;
+}
+
+.equal {
+  grid-column: span 2;
+  background-color: rgb(239, 250, 252);
+}
